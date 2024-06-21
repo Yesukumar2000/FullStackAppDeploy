@@ -1,0 +1,48 @@
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  
+  .nav-link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    /* Adjust layout for mobile devices */
+    .top-nav {
+      display: flex; /* Switch to flexbox for better responsiveness */
+      flex-wrap: wrap; /* Wrap links to multiple lines if needed */
+    }
+  
+    .nav-link {
+      /* Adjust styles for smaller screens */
+      float: none; /* Remove float for responsive layout */
+      margin-right: 0.5rem; /* Add some spacing between links */
+      font-size: 0.8rem; /* Adjust font size for mobile devices */
+      padding: 0.5rem; /* Adjust padding for better spacing */
+    }
+  }
+  
